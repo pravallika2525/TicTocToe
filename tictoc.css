@@ -15,11 +15,11 @@ body {
 }
 
 cell.player-x {
-    color: white; /* Player X: White */
+    color: white; 
 }
 
 .cell.player-o {
-    color: black; /* Player O: Black */
+    color: black; 
 }
 
 .game-container {
