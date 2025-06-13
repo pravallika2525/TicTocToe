@@ -61,7 +61,7 @@ const gameBoard = document.getElementById('gameBoard');
 
             if (roundWon) {
                 gameMessage.innerHTML = ''; 
-                winCelebrationMessage.innerHTML = `🎉 Player ${currentPlayer} Wins! 🎉`; // Display win message
+                winCelebrationMessage.innerHTML = `🎉 Player ${currentPlayer} Wins! 🎉`; 
                 winCelebrationMessage.style.opacity = 1; 
                 winCelebrationMessage.style.transform = 'translateY(0)'; s
                 winningCombo.forEach(index => {
@@ -121,7 +121,7 @@ const gameBoard = document.getElementById('gameBoard');
 
 
 
-        // Inside the handleCellClick function:
+       
 function handleCellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
     const clickedCellIndex = parseInt(clickedCell.dataset.cellIndex);
@@ -133,15 +133,15 @@ function handleCellClick(clickedCellEvent) {
     board[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
 
-    // --- ADD THIS CODE HERE ---
+   
     if (currentPlayer === 'X') {
         clickedCell.classList.add('player-x');
-        clickedCell.classList.remove('player-o'); // Ensure only 'player-x' is active
-    } else { // currentPlayer is 'O'
+        clickedCell.classList.remove('player-o'); 
+    } else { 
         clickedCell.classList.add('player-o');
-        clickedCell.classList.remove('player-x'); // Ensure only 'player-o' is active
+        clickedCell.classList.remove('player-x'); 
     }
-    // --- END OF ADDITION ---
+  
 
     checkResult();
 }
