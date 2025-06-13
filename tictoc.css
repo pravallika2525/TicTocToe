@@ -65,11 +65,11 @@ h1 {
 
 
 .cell.player-x {
-color: #fcfdff; /* Blue for Player X */
+color: #fcfdff; 
 }
 
 .cell.player-o {
-color: #0c0c0c; /* Red for Player O */
+color: #0c0c0c; 
 }
 .game-board {
     display: grid;
